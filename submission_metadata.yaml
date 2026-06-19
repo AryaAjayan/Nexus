@@ -1,0 +1,69 @@
+# Redrob Hackathon — Submission Metadata for NEXUS
+#
+# Fill in your contact details, GitHub repo link, and sandbox link before submitting.
+# This file matches the exact schema required by validate_submission and Stage 3 checks.
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "NEXUS"  # Used in leaderboard and announcements
+
+primary_contact:
+  name: "YOUR_FULL_NAME"         # TODO: Replace with your actual name
+  email: "YOUR_EMAIL@example.com" # TODO: Replace with your actual email
+  phone: "+91-XXXXXXXXXX"        # TODO: Replace with your actual phone number
+
+team_members:
+  - name: "YOUR_FULL_NAME"       # TODO: Replace with your name
+    email: "YOUR_EMAIL@example.com"
+    role: "ML Engineer"          # Optional, e.g. "Team Lead", "Backend", "Data"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/YOUR_USERNAME/nexus-ranker" # TODO: Replace with your GitHub repository URL
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/nexus-ranker" # TODO: Replace with your HuggingFace Spaces/demo link
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+# The single command that produces submission.csv from candidates.jsonl.
+# Runs in ~85s on CPU with 16GB RAM and no network.
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local CPU Machine"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11"
+  os: "Windows / Linux"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini"
+  - "GitHub Copilot"
+
+ai_usage_summary: |
+  Used Gemini for architectural planning, code integrity checking, and implementing the 6-layer ranking algorithm. Used GitHub Copilot for code autocompletion. No candidate profile data was shared with external LLM APIs.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  NEXUS is a highly-optimized 6-layer candidate ranking pipeline consisting of: (0) Integrity Shield (6-anomaly honeypot filter), (1) JD Intelligence Parser, (2) Career DNA Trajectory Extractor (measuring real AI experience vs. keyword claims), (3) Semantic Fit Scorer (3-tier cascading filter + BM25), (4) Behavioral Readiness Scorer, and (5) Ensemble Ranker. Runs in ~85s on 100K candidates (CPU-only) with 0% honeypot rate.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
