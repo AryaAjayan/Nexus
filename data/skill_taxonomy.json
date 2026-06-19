@@ -1,0 +1,150 @@
+{
+  "tier_a": {
+    "description": "Core required skills for this JD — highest scoring weight",
+    "skills": [
+      "faiss", "faiss-cpu", "faiss-gpu",
+      "pinecone", "weaviate", "qdrant", "milvus", "opensearch",
+      "elasticsearch", "vector database", "vector search", "vector store",
+      "sentence transformers", "sentence-transformers", "semantic search",
+      "hybrid search", "dense retrieval", "sparse retrieval",
+      "bm25", "bm25+", "okapi bm25",
+      "embedding retrieval", "embeddings-based retrieval",
+      "bge", "e5", "openai embeddings", "ada embeddings",
+      "reranking", "cross-encoder", "bi-encoder",
+      "information retrieval", "learning to rank", "ltr",
+      "ranking system", "recommendation system", "search system",
+      "ndcg", "map", "mrr", "recall@k", "precision@k",
+      "rrf", "reciprocal rank fusion", "ann search",
+      "approximate nearest neighbor", "hnsw", "ivf"
+    ]
+  },
+  "tier_b": {
+    "description": "Strong positive signals — preferred in JD",
+    "skills": [
+      "lora", "qlora", "peft", "fine-tuning", "fine-tuning llms",
+      "llm fine-tuning", "instruction tuning", "rlhf",
+      "xgboost", "lightgbm", "catboost", "gradient boosting",
+      "pytorch", "tensorflow", "keras",
+      "huggingface", "transformers", "bert", "roberta", "t5", "gpt",
+      "rag", "retrieval augmented generation",
+      "mlflow", "wandb", "weights & biases",
+      "ray", "ray serve", "triton", "torchserve", "bentoml",
+      "kubeflow", "sagemaker", "vertex ai",
+      "a/b testing", "online experimentation",
+      "distributed training", "model optimization",
+      "quantization", "distillation",
+      "nlp", "natural language processing",
+      "text embedding", "document ranking",
+      "openai", "anthropic", "llama", "mistral", "gemma",
+      "langchain", "llamaindex", "haystack"
+    ]
+  },
+  "tier_c": {
+    "description": "Relevant but secondary — some weight",
+    "skills": [
+      "python", "sql", "git",
+      "docker", "kubernetes", "k8s",
+      "aws", "gcp", "azure", "cloud",
+      "spark", "apache spark", "pyspark",
+      "airflow", "apache airflow",
+      "kafka", "apache kafka",
+      "redis", "postgresql", "mysql", "mongodb",
+      "sklearn", "scikit-learn",
+      "numpy", "pandas", "scipy",
+      "matplotlib", "seaborn",
+      "feature engineering", "feature store",
+      "data pipeline", "etl",
+      "rest api", "fastapi", "flask",
+      "ci/cd", "github actions",
+      "linux", "bash",
+      "databricks", "snowflake", "bigquery",
+      "statistical modeling", "regression", "classification",
+      "reinforcement learning", "multi-armed bandit",
+      "milvus", "pgvector", "chroma", "weaviate"
+    ]
+  },
+  "not_relevant": {
+    "description": "Neutral — not positive or negative signals on their own",
+    "skills": [
+      "react", "angular", "vue", "nextjs", "gatsby",
+      "javascript", "typescript", "html", "css",
+      "tailwind", "bootstrap", "sass",
+      "node.js", "nodejs", "express",
+      "webpack", "vite", "rollup",
+      "redux", "graphql", "rest",
+      "php", "ruby", "go", "rust", "java", "c#", ".net",
+      "excel", "powerpoint", "word",
+      "photoshop", "figma", "illustrator", "canva",
+      "sap", "erp", "crm", "salesforce",
+      "six sigma", "lean", "agile", "scrum",
+      "accounting", "finance", "taxation",
+      "marketing", "seo", "sem", "social media",
+      "content writing", "copywriting",
+      "project management", "pmp", "prince2"
+    ]
+  },
+  "negative_context": {
+    "description": "Negative signals when these are PRIMARY domain — not disqualifying on their own",
+    "skills": [
+      "image classification", "object detection", "yolo",
+      "computer vision", "opencv", "image segmentation",
+      "speech recognition", "tts", "text-to-speech",
+      "asr", "whisper", "wav2vec",
+      "gans", "generative adversarial", "stable diffusion",
+      "robotics", "ros", "slam",
+      "mechanical engineering", "cad", "solidworks", "ansys",
+      "civil engineering", "structural analysis",
+      "electrical engineering", "pcb design"
+    ]
+  },
+  "consulting_companies": {
+    "description": "Services/consulting companies — penalize if entire career spent here",
+    "companies": [
+      "tcs", "tata consultancy", "tata consultancy services",
+      "infosys", "wipro", "accenture", "cognizant", "capgemini",
+      "hcl", "hcl technologies", "tech mahindra",
+      "ibm global services", "ibm consulting",
+      "hexaware", "mphasis", "mindtree",
+      "l&t infotech", "ltimindtree", "lti",
+      "persistent systems", "coforge", "niit technologies",
+      "zensar", "mastech", "syntel",
+      "deloitte", "kpmg", "ey", "pwc", "ernst & young",
+      "bain", "mckinsey", "bcg", "booz allen"
+    ]
+  },
+  "ai_role_titles": {
+    "description": "Titles that strongly suggest genuine AI/ML work",
+    "titles": [
+      "ml engineer", "machine learning engineer",
+      "ai engineer", "artificial intelligence engineer",
+      "data scientist", "applied scientist",
+      "research engineer", "research scientist",
+      "nlp engineer", "nlp scientist",
+      "search engineer", "retrieval engineer",
+      "recommendation engineer", "ranking engineer",
+      "mlops engineer", "ai/ml engineer",
+      "deep learning engineer",
+      "senior ml", "staff ml", "principal ml",
+      "backend engineer", "software engineer",
+      "data engineer", "analytics engineer",
+      "platform engineer", "infrastructure engineer"
+    ]
+  },
+  "non_ai_titles": {
+    "description": "Titles that suggest non-AI background",
+    "titles": [
+      "hr manager", "human resources", "recruiter",
+      "marketing manager", "brand manager", "growth manager",
+      "accountant", "finance manager", "cfo",
+      "graphic designer", "ux designer", "ui designer",
+      "content writer", "copywriter", "editor",
+      "sales executive", "business development", "account manager",
+      "operations manager", "supply chain",
+      "project manager", "program manager",
+      "mechanical engineer", "civil engineer",
+      "electrical engineer", "chemical engineer",
+      "customer support", "customer success",
+      "business analyst"
+    ]
+  }
+}
