@@ -28,6 +28,7 @@ candidates.jsonl.gz
 
 # Output files
 *.csv
+*.xlsx
 test_output.csv
 test.csv
 
